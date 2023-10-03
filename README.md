@@ -1,3 +1,4 @@
+command to install chart bar - npm install react-chartjs-2 chart.js
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
