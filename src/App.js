@@ -1,10 +1,10 @@
 import {Bar} from 'react-chartjs-2';
-import {Chart,LinearScale,CategoryScale,BarElement,legend,Title,Tooltip} from 'chart.js';
+import {Chart,LinearScale,BarElement,CategoryScale,Legend,Title,Tooltip} from 'chart.js';
 Chart.register(
-LinearScale,CategoryScale,BarElement,legend,Title,Tooltip
-)
+LinearScale,CategoryScale,BarElement,Legend,Title,Tooltip
+);
 
-const labels=['Jan','Feb','Mar','Apr','May','June','July','Aug','Sep','Oct','Nov','Dec'];
+const labels=['HTML','CSS','JS','REACTJS','PYTHON','SQL','NODEJS'];
 
 const options={
   plugins:{
@@ -13,7 +13,7 @@ const options={
     },
     title:{
       display:true,
-      text:"Expense Tracker"
+      text:"Subject wise Marks"
     }
   }
 }
@@ -21,14 +21,14 @@ const data = {
   labels,
   datasets:[
     {
-      label:'2020 Expenses',
-      data:[1000,9000,8000,10200,10500,8400,13000,8900,14600,17000,9000,12500],
-      backgroundColor:'pink'
+      label:'2022 Marks',
+      data:[10,50,25,30,40,15,50],
+      backgroundColor:'green'
     },
     {
-      label:'2021 Expenses',
-      data:[17000,11000,12500,11000,12100,7500,13800,8100,9600,10000,11000,8000],
-      backgroundColor:'gray'
+      label:'2023 Marks',
+      data:[40,20,35,10,50,35,20],
+      backgroundColor:'red'
     }
   ]
 }
